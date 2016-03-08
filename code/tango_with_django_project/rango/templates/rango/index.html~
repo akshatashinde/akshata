@@ -1,0 +1,15 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Rango</title>
+</head>
+<body>
+<h1>Rango says....</h1>
+hello world!
+<strong>{{ boldmessage }}</strong><br />
+<a href="/rango/about/">About</a><br />
+{% load staticfiles %}
+<img src="/home/avhaleraj/akshata/code/tango_with_django_project/tango_with_django_project/static/images/1.jpeg" alt="Mountain View" style="width:304px;height:228px;">
+
+</body>
+</html>
