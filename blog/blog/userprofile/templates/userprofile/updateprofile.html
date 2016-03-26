@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Update profile</title>
-	<h1>Update User Profile</h1>
+	<title>User profile</title>
+	<h1>User Profile</h1>
 </head>
 <script type='text/javascript'>
 	$('input[type="text"]').addClass('form-control');
@@ -10,11 +10,12 @@
 </script>
 <body>
 	
-	<form action="" method="post">
+	<form action="" method="post" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{form.as_p}}
-		<input type='submit' value='Update details!' class='btn btn-primary btn-lg btn-block'/>
-		
+		{{profile_form.as_p}}
+		<input type='submit' value='Save' class='btn btn-primary btn-lg btn-block'/>
+		<input type='submit' value='clear' class='btn btn-primary btn-lg btn-block'/>
 	</form>
 
 </body>
